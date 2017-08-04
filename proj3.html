@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+	Name: Desai, Rutvik
+	Class Account#: jadrn010
+	Project #3
+-->
+
+<head>
+<meta charset="utf-8">
+<title>Magic Guitars</title>
+<link rel="stylesheet" href="/jadrn010/css/shop.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/jquery/jquery.js"></script>
+    <script src="/jquery/jQueryUI.js"></script>
+<script src="/jadrn010/js/shop.js"></script>
+
+</head>
+<body>
+
+<div id="header">
+  <h1 id="logo">Magic Guitars</h1>
+<div>
+<a id="myCart" href="servlet/ShowCart"> <img border="0"src="/~jadrn010/proj1/images/cart.png" style="width:80px; height:80px"></a>
+</div>
+</div>
+<div>    
+<div class="filterDiv"><button class="accordion">Category<span class="arrow">&#9660;</span></button>
+<div class="panel">
+<div class="panelin">
+						<input id="c1" type="checkbox">
+						<label for="c1">Acoustic</label><br />
+						<input id="c2" type="checkbox">
+						<label for="2">Electric</label><br />
+</div>
+</div>
+
+<button class="accordion">Brands<span class="arrow">&#9660;</span></button>
+<div class="panel">
+<div class="panelin">
+						<input id="c3" type="checkbox">
+						<label for="c3">Gibson</label><br />
+						<input id="c4" type="checkbox">
+						<label for="c4">Fender</label><br />
+						<input id="c5" type="checkbox">
+						<label for="c5">Ibanez</label><br />
+						<input id="c6" type="checkbox">
+						<label for="c6">Epiphone</label><br />
+						<input id="c7" type="checkbox">
+						<label for="c7">ESP</label><br />
+						<input id="c8" type="checkbox">
+						<label for="c8">Yamaha</label><br />
+</div>
+</div>
+<div id="filterB">
+<input type="button" id="filter" value="Filter" /> &nbsp &nbsp &nbsp
+<input type="reset" id="reset" value="Reset"  />
+</div>
+</div>
+<div id=searchDiv>
+<button id="home">Home</button>
+<button id="contact">Contact Us</button>
+<button id="about">About us</button>
+</div>
+<div id="allData"></div>
+</div>
+</div>
+		<div id="myModal" class="modal">
+			<div class="modalBody">
+				<form id="detailed_view_form">
+					<span class="close">×</span><img id="productImage" class="modal-img" src="">
+						<input type="hidden" id="skuModal" name="skuModal" />
+						<input type="hidden" id="onHand" name="onHand" />
+						<table>
+						<tr><th colspan="2" id="title_th">
+						<h1><label id="title">Products Details</label></h1></th>
+						</tr>
+						<tr>
+							<th colspan="2"><label>Manufacturing ID:</label></th>
+						</tr>
+						<tr>
+							<td colspan="2"><label id="manuIDModal"></label>
+								<br /></td>
+						</tr>
+						<tr>
+							<th colspan="2"><label>Category:</label></th>
+						</tr>
+						<tr>
+							<td colspan="2"><label id="categoryModal"></label><br /></td>
+						</tr>
+						<tr>
+							<th colspan="2"><label>Brand:</label></th>
+						</tr>
+						<tr>
+							<td colspan="2"><label id="brandModal"></label><br /> </td>
+						</tr>
+
+						<tr>
+							<th colspan="2"><label>Description:</label></th>
+						</tr>
+						<tr>
+							<td colspan="2"><label id="descriptionModal"></label></td>
+						</tr>
+						<tr>
+							<th colspan="2"><label>Features:</label></th>
+						</tr>
+						<tr>
+							<td colspan="2"><label id="featuresModal"></label><br /></td>
+						</tr>
+						<tr>
+							<th><label>Cost:$</label></th>
+							<td><label id="retailModal"></label></td>
+						</tr>
+						<tr>
+							<th><label>Status:</label></th>
+							<td><label id="statusModal"></label></td>
+						</tr>
+						<tr>
+							<th><label id="quantityModal" hidden="true" >Quantity:</label></th>
+							<td><input type="number" name="quantity" id="quantity"
+								hidden="true" size="5" value="1" min="1"></td>
+						</tr>
+						<tr>
+							<td colspan="2"><input type="button" id="addCartModal"
+								value="Add To Cart" class="button"
+								hidden="true" /></td>
+							<td colspan="2"><input type="button" id="goToCart"
+								value="Go to Cart" class="details"/></td>
+						</tr>
+						<tr>
+							<td colspan="2"></br><b><label hidden="true" id="error" name="error"></label></b></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

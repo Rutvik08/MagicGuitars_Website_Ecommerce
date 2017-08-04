@@ -1,0 +1,545 @@
+/*
+ * Name: Desai, Rutvik
+ * Class Account#: jadrn010
+ * Project #3
+ */
+
+#header {
+    background-color: #000;
+	text-align: center;
+    color: white;
+height: 70px;
+border-radius: 8px;
+    border: 2px solid red;
+  align-items: center;
+padding-left: 30px;
+padding-right: 50px;
+}
+
+.hidden{
+display: none;
+}
+
+
+#filterB{
+    padding: 10px 20px 12px 12px;
+text-align:center;
+}
+
+#myCart{
+float:right;
+color:#000;
+}
+
+#myCart:hover, #myCart:focus {
+	cursor: pointer;
+}
+
+#searchDiv {
+text-align:center;
+    padding: 12px 20px 12px 0px;
+}
+
+#aboutData{
+text-align:center;
+font-family: "Comic Sans MS", cursive, sans-serif;
+text-size: 15px;
+margin: 0 auto;
+border-radius: 8px;
+    border: 5px solid red;
+padding: 10px;
+width: 70%;
+background-color: #fff;
+}
+
+#contactData{
+text-align:center;
+font-family: "Comic Sans MS", cursive, sans-serif;
+text-size: 15px;
+margin: 0 auto;
+border-radius: 8px;
+    border: 5px solid red;
+padding: 10px;
+width: 70%;
+background-color: #fff;
+}
+#shippingData{
+text-align:center;
+font-family: "Comic Sans MS", cursive, sans-serif;
+text-size: 15px;
+margin: 0 auto;
+border-radius: 8px;
+    border: 5px solid red;
+padding: 10px;
+width: 70%;
+background-color: #fff;
+}
+
+#shippingTable{
+     margin: 0 auto; 
+}
+
+#payTable{
+     margin: 0 auto; 
+}
+
+.shippingText{
+  padding: 5px;
+  border: solid 2px #c9c9c9;
+  box-shadow: inset 0 0 0 1px #707070;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+#billingData{
+text-align:center;
+font-family: "Comic Sans MS", cursive, sans-serif;
+text-size: 15px;
+margin: 0 auto;
+border-radius: 8px;
+    border: 5px solid red;
+padding: 10px;
+width: 70%;
+background-color: #fff;
+}
+
+#billingTable{
+     margin: 0 auto; 
+}
+
+.billingText{
+  padding: 5px;
+  border: solid 2px #c9c9c9;
+  box-shadow: inset 0 0 0 1px #707070;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+#checkB{
+padding:10px;
+font-size:20px;
+text-align:center;
+}
+
+#payData{
+text-align:center;
+font-family: "Comic Sans MS", cursive, sans-serif;
+text-size: 15px;
+margin: 0 auto;
+border-radius: 8px;
+    border: 5px solid red;
+padding: 10px;
+width: 70%;
+background-color: #fff;
+}
+
+#logo{
+float:center;
+}
+ 
+button.accordion {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    width: 97%;
+border-radius: 8px;
+font-weight: bold;
+    border: 2px solid red;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active {
+    background-color: red;
+color: #000;
+border: 2px solid #000;
+}
+
+button.accordion:hover {
+    background-color: #ff9999;
+color: #000;
+border: 2px solid red;
+}
+
+.cartTable{
+     margin: 0 auto;
+     width: 80%; 
+}
+
+
+#noData{
+     margin: 0 auto;
+     width: 80%; 
+	text-align: center;
+}
+
+#cartTableContent{
+     margin: 0 auto;
+     width: 80%; 
+border-radius: 8px;
+}
+
+.cartTableContent td, .cartTableContent th {
+    border: 2px solid black;
+    padding: 15px;
+    text-align: center;
+}
+
+#totalCost, #shipping, #tax, #sumCost{
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+color:color;
+
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+#cartButtons{
+  margin-top: 10px;
+text-align:center;
+}
+
+.panelin{
+padding: 20px 18px;
+}
+  
+.filterDiv {
+	background-color: ##ffe6e6;
+	margin: 0;
+	padding: 0;
+	width: 19%;
+	position: fixed;
+	top: 150px;
+	bottom: 0;
+	height: 150;
+}
+
+.delete {
+	font-size: 12px;
+	font-weight: normal;
+	padding: 5px 10px;
+	cursor: pointer;
+	text-align: center;
+	outline: none;
+	color: #fff;
+border-radius: 5px;
+	border: 1px solid red;
+font-weight: bold;
+	background-color: #000;
+}
+
+.update {
+	font-size: 12px;
+	font-weight: normal;
+	padding: 5px 10px;
+	cursor: pointer;
+	text-align: center;
+	outline: none;
+	color: #000;
+border-radius: 5px;
+	border: 2px solid black;
+font-weight: bold;
+	background-color: #d6f5d6;
+}
+
+.continue {
+	font-size: 12px;
+	font-weight: normal;
+	padding: 5px 10px;
+	cursor: pointer;
+	text-align: center;
+	outline: none;
+	color: #fff;
+border-radius: 5px;
+	border: 1px solid black;
+font-weight: bold;
+	background-color: green;
+}
+
+.checkoutO {
+	font-size: 12px;
+	font-weight: normal;
+	padding: 5px 10px;
+	cursor: pointer;
+	text-align: center;
+	outline: none;
+	color: #fff;
+border-radius: 5px;
+	border: 1px solid red;
+font-weight: bold;
+	background-color: #000;
+}
+
+.cancelO {
+	font-size: 12px;
+	font-weight: normal;
+	padding: 5px 10px;
+	cursor: pointer;
+	text-align: center;
+	outline: none;
+	color: #fff;
+border-radius: 5px;
+	border: 1px solid black;
+font-weight: bold;
+	background-color: green;
+}
+
+.checkout {
+	font-size: 12px;
+	font-weight: normal;
+	padding: 5px 10px;
+	cursor: pointer;
+	text-align: center;
+	outline: none;
+	color: #fff;
+border-radius: 5px;
+	border: 1px solid red;
+font-weight: bold;
+	background-color: #000;
+}
+
+.details {
+	font-size: 12px;
+	font-weight: normal;
+	padding: 5px 10px;
+	cursor: pointer;
+	text-align: center;
+	outline: none;
+	color: #FFFFFF;
+border-radius: 5px;
+	border: 1px solid red;
+font-weight: bold;
+	background-color: #000000;
+}
+
+#filter, #reset{
+background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+border-radius: 8px;
+font-weight: bold;
+    border: 2px solid red;
+    font-size: 15px;
+}
+
+
+#home, #contact, #about{
+margin:auto;
+width:200px;
+background-color: red;
+    color: #000;
+    cursor: pointer;
+    padding: 10px;
+border-radius: 8px;
+font-weight: bold;
+    border: 2px solid #000;
+    font-size: 15px;
+}
+
+
+.arrow {
+float:right;
+color:#fff;
+}
+
+
+#product {
+  width: 300px;
+  height:370px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+div.container {
+  padding: 100px;
+}
+
+#in
+{
+font-style: italic;
+text-align: center;
+color: green;
+}
+#out
+{
+font-style: italic;
+text-align: center;
+color: red;
+}
+
+#soon
+{
+font-style: italic;
+text-align: center;
+color: blue;
+}
+
+.in
+{
+font-style: italic;
+text-align: center;
+color: green;
+}
+.out
+{
+font-style: italic;
+text-align: center;
+color: red;
+}
+
+.soon
+{
+font-style: italic;
+text-align: center;
+color: blue;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 120px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.6);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.modalBody {
+	margin: auto;
+	padding: 20px;
+	border: 2px solid red;
+	border-radius: 8px;
+	width: 60%;
+	height: 520px;
+background-color: #fff;
+}
+
+.modalC {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 120px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.6);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.modalBodyC {
+	margin: auto;
+	padding: 20px;
+	border: 2px solid red;
+	border-radius: 8px;
+	width: 60%;
+	height: 100%;
+	overflow: auto;
+background-color: #fff;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.closeC {
+	color: #aaa;
+	float: right;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.closeC:hover, .closeC:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#productImage {
+	position: relative;
+	clear: none;
+	width: 40%;
+	display: block;
+	float: left;
+	margin: 85px auto 0px auto;
+	vertical-align: middle;
+	border: 3px solid red; 
+	width: 250px; 
+	height: 250px
+}
+
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+#error{
+font-size:25px;
+color: red;
+}
+#errorB{
+font-size:25px;
+color: red;
+}
+#errorS{
+font-size:25px;
+color: red;
+}
+#errorC{
+font-size:25px;
+color: red;
+}
+table td label {
+	width: 1px;
+}
+
+table th, td {
+	padding-left: 15px;
+	text-align: left;
+	vertical-align: center;
+}
+
+#addCartModal {
+	font-size: 12px;
+	font-weight: normal;
+	padding: 5px 10px;
+	cursor: pointer;
+	text-align: center;
+	outline: none;
+	color: #FFFFFF;
+border-radius: 5px;
+	border: 1px solid red;
+font-weight: bold;
+	background-color: #000000;
+}
+
